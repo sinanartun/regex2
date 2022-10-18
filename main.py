@@ -4,12 +4,12 @@ import time
 
 start_time1 = time.time()
 regex1 = r"(\d{2})\.(\d{2})\.(\d{4})"
-regex2 = r"(\d+)\.(\d+)\.(\d+)"
+regex2 = r"(\d+)\.?"
 
 test_str = "03.27.2022"
 
 for x in range(10000000):
-    matches = re.search(regex1, test_str)
+    matches = re.finditer(regex1, test_str)
 end_time1 = time.time()
 result1 = end_time1 - start_time1
 
