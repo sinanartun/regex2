@@ -1,6 +1,6 @@
 import re
 import time
-import os.path
+
 
 start_time1 = time.time()
 regex1 = r"(\d{2})\.(\d{2})\.(\d{4})"
